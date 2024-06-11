@@ -39,12 +39,12 @@ export default function Footer() {
         </div>
         <div className="grid gap-1">
           <h3 className="font-semibold">Contacto</h3>
-          <Link href="#">nexteleven.ar@gmail.com</Link>
+          <Link href="/">nexteleven.ar@gmail.com</Link>
         </div>
         <div className="grid gap-1">
           <h3 className="font-semibold">Legal</h3>
-          <Link href="#">Términos de Servicio</Link>
-          <Link href="#">Política de Privacidad</Link>
+          <Link href="/dmca">Términos de Servicio</Link>
+          <Link href="/privacypolicy">Política de Privacidad</Link>
         </div>
         <div className="grid gap-1">
           <div className="flex items-center gap-4">

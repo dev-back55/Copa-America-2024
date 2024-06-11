@@ -25,7 +25,7 @@ export default function Navbar() {
             <span className="text-lg font-bold">Copa América 2024</span>
           </Link>
         </div>
-        <nav className="hidden items-center gap-6 text-md font-semibold md:flex">
+        <nav className="hidden items-center gap-6 text-md font-semibold lg:flex">
           <Link href="/" className="hover:text-gray-300" prefetch={false}>
             Inicio
           </Link>
@@ -44,15 +44,15 @@ export default function Navbar() {
           <Link href="/final" className="hover:text-gray-300" prefetch={false}>
             Final
           </Link>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Link href="#" className="hover:text-gray-300 hidden md:flex" prefetch={false}>
+          <Link href="#" className="hover:text-gray-300" prefetch={false}>
             Video/Fotos
           </Link>
+        </nav>
+        <div className="flex items-center gap-4">
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full md:hidden"
+            className="rounded-full lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ export default function Navbar() {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 z-50 w-full bg-gray-950 px-4 py-4 md:hidden">
+        <div className="absolute top-16 left-0 z-50 w-full bg-gray-950 px-4 py-4 lg:hidden">
           <nav className="grid gap-4">
             <Link href="/" className="hover:text-gray-300" prefetch={false}>
               Inicio

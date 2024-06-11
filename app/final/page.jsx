@@ -10,6 +10,7 @@ export default function CuartosList() {
         <div>
           <h2 className="text-2xl font-display">3º Puesto y Final</h2>
           <p className="text-zinc-500">13 de julio al 14 de julio</p>
+          <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>
         </div>
       </div>
       <ul className="space-y-6 lg:space-y-4">
