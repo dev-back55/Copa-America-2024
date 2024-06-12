@@ -23,6 +23,7 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        custom_celeste: "#87CEFA",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -93,6 +94,7 @@ module.exports = {
       },
       backgroundImage: {
         'radial': 'radial-gradient(black 30%, #0e0e11)',
+        'celeste-white-gradient': 'linear-gradient(to bottom, rgba(135, 206, 250, 0.6), rgba(255, 255, 255, 0.6), rgba(135, 206, 250, 0.6))',
       },
       maskImage: {
         'linear-gradient': 'linear-gradient(to right, transparent 0%, white 30%, white 70%, transparent 100%)',
