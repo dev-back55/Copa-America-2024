@@ -49,7 +49,7 @@ const grupoD = paisesPorGrupo['D'];
                         width={48}
                         height={48}
                         />
-                    <AvatarFallback>D1</AvatarFallback>
+                    
                 </Avatar>
                 <div>
                     <div className="font-semibold">{pais.pais}</div>
@@ -85,7 +85,7 @@ const grupoD = paisesPorGrupo['D'];
                         width={48}
                         height={48}
                         />
-                    <AvatarFallback>D1</AvatarFallback>
+                    
                 </Avatar>
                 <div>
                     <div className="font-semibold">{pais.pais}</div>
@@ -121,7 +121,7 @@ const grupoD = paisesPorGrupo['D'];
                         width={48}
                         height={48}
                         />
-                    <AvatarFallback>D1</AvatarFallback>
+                    
                 </Avatar>
                 <div>
                     <div className="font-semibold">{pais.pais}</div>
@@ -157,7 +157,7 @@ const grupoD = paisesPorGrupo['D'];
                         width={48}
                         height={48}
                         />
-                    <AvatarFallback>D1</AvatarFallback>
+                    
                 </Avatar>
                 <div>
                     <div className="font-semibold">{pais.pais}</div>
