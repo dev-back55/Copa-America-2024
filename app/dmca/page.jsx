@@ -1,5 +1,8 @@
 import React from 'react'
 
+export const metadata = {
+  title: 'DMCA',
+}
 export default function Dmca() {
   return (
     <div className="mt-24 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">

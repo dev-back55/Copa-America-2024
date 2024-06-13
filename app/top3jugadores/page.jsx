@@ -2,6 +2,11 @@ import React from 'react'
 import { Separator } from "@/components/ui/separator"
 import Image from 'next/image'
 
+
+export const metadata = {
+    title: 'Top 3 Jugadores',
+}
+
 export default function Topjugadores() {
 
     return (

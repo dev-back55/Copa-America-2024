@@ -2,6 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import { Badge } from "@/components/ui/badge"
 
+export const metadata = {
+  title: 'Estadios de la Copa América 2024',
+}
 
 export default function Estadios() {
 

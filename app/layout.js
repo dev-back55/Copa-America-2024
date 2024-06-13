@@ -12,8 +12,15 @@ const kanit = Kanit({ subsets: ["latin"],
  });
 
 export const metadata = {
-  title: "Copa America 2024",
+  title: {
+    default: "Copa América 2024",
+    templates: "%s | CA24-App",
+  },
   description: "Website de Copa America 2024",
+  openGraph: {
+    title: 'Copa América 2024',
+    description: 'Website de Copa America 2024',
+  },
 };
 
 export default function RootLayout({ children }) {

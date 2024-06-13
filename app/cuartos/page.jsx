@@ -3,6 +3,10 @@ import React from "react";
 import { cuartos } from "@/lib/utils";
 import { obtenerDiaDeLaSemana } from "@/lib/utils";
 
+export const metadata = {
+  title: 'Cuartos de final',
+}
+
 export default function CuartosList() {
 
   return (

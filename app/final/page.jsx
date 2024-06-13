@@ -2,6 +2,10 @@ import Image from "next/image";
 import { final } from "@/lib/utils";
 import { obtenerDiaDeLaSemana } from "@/lib/utils";
 
+export const metadata = {
+  title: 'Final Copa América 2024',
+}
+
 export default function CuartosList() {
 
   return (
