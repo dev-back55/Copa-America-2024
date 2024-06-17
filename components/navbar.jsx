@@ -49,7 +49,7 @@ export default function Navbar() {
           <Link href="/final" className="hover:text-gray-300" prefetch={false}>
             Final
           </Link>
-          <Link href="#" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/media" className="hover:text-gray-300" prefetch={false}>
             Video/Fotos
           </Link>
         </nav>
@@ -89,7 +89,7 @@ export default function Navbar() {
             <Link href="/final" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
               Final
             </Link>
-            <Link href="#" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/media" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
               Video/Fotos
             </Link>
           </nav>

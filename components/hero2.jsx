@@ -47,6 +47,9 @@ export default function HeroMain() {
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
+              <Button className="mt-4 gap-1 bg-red-600">
+               Comienza ahora<CheckIcon className="w-5 h-5" />
+              </Button>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <h1 className="text-4xl font-bold uppercase">Siente la Grandeza</h1>
