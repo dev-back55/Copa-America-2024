@@ -33,7 +33,9 @@ export default function FasegruposList() {
             </div>
             <div className="col-span-full lg:col-span-2 hidden lg:grid lg:grid-cols-[1fr_128px_1fr]">
               <div className="flex gap-3 items-center md:justify-end">
+                
                 <span className="text-lg text-right capitalize">{partido.pais1}</span>
+                
                 <div className="team-flag">
                   <Image
                     alt={partido.pais1}
