@@ -45,6 +45,7 @@ export default function FasegruposList() {
                     src={partido.bandera1}
                     />
                 </div>
+                <span className="flex text-lg font-semibold">{partido.gol1}</span>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <p>
@@ -55,6 +56,7 @@ export default function FasegruposList() {
                 </p>
               </div>
               <div className="flex gap-3 items-center">
+              <span className="flextext-lg font-semibold">{partido.gol2}</span>
                 <div className="team-flag">
                   <Image
                     alt={partido.pais2}
@@ -86,6 +88,7 @@ export default function FasegruposList() {
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais1}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol1}</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
@@ -101,6 +104,7 @@ export default function FasegruposList() {
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais2}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol2}</span>
                 </div>
               </div>
               <div className="rounded-xl px-3 py-2 text-center font-semibold">
@@ -113,7 +117,7 @@ export default function FasegruposList() {
                 target="_blank"
                 className="button button-ghost w-full lg:w-auto"
                 id="jogo01_es"
-                href="https://www.horacioabitu.com.ar"
+                href="#"
                 >
                 Ver Resumen
               </a>
