@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { faseGrupos } from "../lib/utils";
+//import { faseGrupos } from "../lib/utils";
 import { obtenerDiaDeLaSemana } from "../lib/utils";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { getFaseGrupos } from "@/lib/actions/partidos";
 
-export default function FasegruposList() {
+export default async function FasegruposList() {
+const faseGrupos = await getFaseGrupos();
 
   return (
     <div className="mt-24 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">
@@ -117,7 +119,7 @@ export default function FasegruposList() {
             {partido.resumen != "#" &&
             <div className="col-span-full lg:col-span-1 lg:text-right text-center p-5 lg:p-0">
               <Link href={partido.resumen} target="_blank">
-                <Button className="gap-1 bg-red-600">Ver Resumen</Button>
+                <Button className="gap-1 bg-green-500">Ver Resumen</Button>
               </Link>
             </div>
             }

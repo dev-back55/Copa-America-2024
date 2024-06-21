@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
+
 
 export const metadata = {
   title: 'About',
 }
-export default function About() {
+export default async function About() {
+
   return (
     
         <div>
-          About
+          Cargando DB...
         </div>
     
   )

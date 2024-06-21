@@ -1,14 +1,14 @@
 "use client"
 
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import { Avatar } from "@/components/ui/avatar"
 import {agruparPaisesPorGrupo} from '@/lib/utils'
 import { paises } from "@/lib/utils"
 import Image from "next/image";
 
 
-
 export default function GruposList() {
+  
 
 // Uso de la función para obtener los arrays agrupados
 const paisesPorGrupo = agruparPaisesPorGrupo(paises);
