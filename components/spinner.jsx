@@ -1,4 +1,4 @@
-const Spinner = () => {
+export default function Spinner() {
     return (
       <div className="flex fex-col justify-center align-center mt-20">
           <div className="w-[70px] h-[70px] flex">
@@ -13,6 +13,4 @@ const Spinner = () => {
           </div>
       </div>
     );
-  };
-  
-  export default Spinner;
+}

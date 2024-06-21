@@ -1,6 +1,4 @@
-import GruposList from '@/components/grupos-list'
-//import { getPaises } from "@/lib/actions/partidos";
-
+import GruposList from '@/components/grupos-list';
 
 export const metadata = {
   title: 'Grupos de la Copa América 2024',
