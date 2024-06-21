@@ -75,7 +75,7 @@ export default function FasegruposList() {
               </div>
             </div>
             <div className="col-span-full lg:hidden flex items-center px-5">
-              <div className="flex flex-col gap-3 flex-grow">
+              <div className="flex flex-col gap-3 flex-grow mb-3">
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
                     <Image
@@ -114,16 +114,13 @@ export default function FasegruposList() {
                 <div className="text-md md:text-xl">{partido.hora} hs</div>
               </div>
             </div>
+            {partido.resumen != "#" &&
             <div className="col-span-full lg:col-span-1 lg:text-right text-center p-5 lg:p-0">
-              <a
-                target="_blank"
-                className="button button-ghost w-full lg:w-auto"
-                id="jogo01_es"
-                href="#"
-                >
-                Ver Resumen
-              </a>
+              <Link href={partido.resumen} target="_blank">
+                <Button className="gap-1 bg-red-600">Ver Resumen</Button>
+              </Link>
             </div>
+            }
           </div>
         </li>
         ))
