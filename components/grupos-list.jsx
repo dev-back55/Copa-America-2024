@@ -1,14 +1,20 @@
-"use client"
-
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Avatar } from "@/components/ui/avatar"
 import {agruparPaisesPorGrupo} from '@/lib/utils'
-import { paises } from "@/lib/utils"
 import Image from "next/image";
+import { getPaises } from "@/lib/actions/partidos";
 
+/*const getData = async () => {
+  const res = await fetch('http://localhost:3000/api/paises');
+  if (!res.ok) {
+    throw new Error('Error al obtener los datos');
+  }
+  return res.json();
+};*/
 
-export default function GruposList() {
-  
+export default async function GruposList() {
+// get paises  
+const paises = await getPaises();
 
 // Uso de la función para obtener los arrays agrupados
 const paisesPorGrupo = agruparPaisesPorGrupo(paises);
