@@ -59,7 +59,24 @@ export default function HeroMain() {
             
             </Link>
           </div>
-          <Image
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+            <Link href="/messirecord">
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719066250/leo_nuevo_record_rexkqq.webp"}
+              alt="messi record nuevo"
+              sizes="100vw"
+              width={900}
+              height={600}
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+                <h1 className="text-2xl lg:text-3xl">Lionel Messi nuevo record, jugador con más partidos.</h1>
+            </div>
+            </Link>
+          </div>  
+
+          {/*<Image
             alt="copa america logo"
             loading="lazy"
             width="180"
@@ -100,7 +117,7 @@ export default function HeroMain() {
             className="text-transparent"
             src="/images/pajaroloco.webp"
           />
-          </motion.div>
+          </motion.div>*/}
         </div>
         <div className="w-full flex flex-col md:flex-row gap-6 mx-auto py-3 md:py-6 px-3 md:px-0">
           <div className="w-full md:w-2/3 relative h-1/2 md:h-full">
@@ -114,7 +131,7 @@ export default function HeroMain() {
                 height={600}
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute bottom-0 left-0 p-3 text-white">
+              <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
                 <h1 className="text-2xl lg:text-3xl">Estadios de la CONMEBOL Copa América 2024™</h1>
               </div>
               </Link>
@@ -131,7 +148,7 @@ export default function HeroMain() {
             sizes="100vw"
             className="w-full h-auto object-cover"
           />
-          <div className="absolute bottom-0 left-0 p-3 text-white">
+          <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
             <h1 className="text-2xl lg:text-3xl">
               Top 3: Los jugadores con más partidos
             </h1>
@@ -149,7 +166,7 @@ export default function HeroMain() {
             height={300}
             className="w-full h-auto object-cover"
           />
-          <div className="absolute bottom-0 left-0 p-3 text-white">
+          <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
             <h1 className="text-2xl lg:text-3xl">
               El último CAMPEÓN
             </h1>
