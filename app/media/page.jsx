@@ -1,7 +1,10 @@
 import DisplayVideo from '@/components/displayVideo';
-import { listVideos } from "@/lib/utils";
+//import { listVideos } from "@/lib/utils";
+import { getListVideos } from '@/lib/actions/partidos';
 
-export default function Media() {
+export default async function Media() {
+
+  const listVideos = await getListVideos();
 
   return (
     <div className="mt-24 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">
