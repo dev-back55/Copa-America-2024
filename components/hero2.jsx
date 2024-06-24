@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
-import { motion } from "framer-motion"
+
 
 export default function HeroMain() {
   const [countdown, setCountdown] = useState({
@@ -119,6 +119,29 @@ export default function HeroMain() {
           />
           </motion.div>*/}
         </div>
+
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <h1 className="text-4xl font-bold uppercase">LA MAGIA INTACTA</h1>
+            <p className="mt-2 text-xl font-light">🎂 37 años, 5 Mundiales jugados, la magia de siempre 🇦🇷</p>
+            <p className="mt-2 text-xl font-light">El paso del tiempo, en los pies de @leomessi</p>
+            <p className="mt-2 text-xl font-light">📹 FIFA</p>
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+            
+            <video 
+                src="https://res.cloudinary.com/dqg1afwty/video/upload/v1719252327/37_a%C3%B1os_5_Mundiales_jugados_la_magia_de_siempre_El_paso_del_tiempo_en_los_pies_de_leomessi_FIFA_qzyoro.mp4" 
+                width="auto"
+                height="auto"
+                controls
+                className="rounded-lg">
+            </video>
+            
+            
+          </div>  
+        </div>  
+
         <div className="w-full flex flex-col md:flex-row gap-6 mx-auto py-3 md:py-6 px-3 md:px-0">
           <div className="w-full md:w-2/3 relative h-1/2 md:h-full">
             <div className="rounded-lg overflow-hidden relative h-full"> 
