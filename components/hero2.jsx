@@ -128,7 +128,7 @@ export default function HeroMain() {
             <p className="mt-2 text-xl font-light">📹 FIFA</p>
           </div>
 
-          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
             
             <video 
                 src="https://res.cloudinary.com/dqg1afwty/video/upload/v1719252327/37_a%C3%B1os_5_Mundiales_jugados_la_magia_de_siempre_El_paso_del_tiempo_en_los_pies_de_leomessi_FIFA_qzyoro.mp4" 
