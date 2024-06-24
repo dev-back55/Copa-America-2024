@@ -12,6 +12,7 @@ import {
 import Image from 'next/image'
 
 export default async function FelizCumple() {
+  
   const titulo="¡Feliz Cumple!🐑​​🇦🇷🏆​💯​⚽​​" 
   const descrip="¡FELICES 37, CAPITÁN! 🩵​🤍​🩵 LAS ESTRELLAS TE VIERON GANAR ⭐️⭐️⭐️ ¡GRACIAS POR TANTAS ALEGRIAS! 🩵​🤍​🩵" 
   const url="https://res.cloudinary.com/dqg1afwty/video/upload/v1719240810/LAS_ESTRELLAS_TE_VIERON_GANAR_%EF%B8%8F_%EF%B8%8F_%EF%B8%8F_FELICES_37_CAPIT%C3%81N_bhfr2x.mp4"
@@ -28,7 +29,7 @@ export default async function FelizCumple() {
               width={900}
               height={600}
               className="w-full h-auto object-cover"
-            />
+        />
     <div className="flex flex-col justify-center align-center">
         <Dialog>
         <DialogTrigger asChild>
