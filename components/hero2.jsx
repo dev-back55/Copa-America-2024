@@ -61,17 +61,17 @@ export default function HeroMain() {
           </div>
 
           <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
-            <Link href="/messirecord">
+            <Link href="/felizcumple">
             <Image 
-              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719066250/leo_nuevo_record_rexkqq.webp"}
-              alt="messi record nuevo"
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719241652/lionel-messi_ksbxft.webp"}
+              alt="feliz cumple leo messi"
               sizes="100vw"
               width={900}
               height={600}
               className="w-full h-auto object-cover"
             />
             <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h1 className="text-2xl lg:text-3xl">Lionel Messi nuevo record, jugador con más partidos.</h1>
+                <h1 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h1>
             </div>
             </Link>
           </div>  
