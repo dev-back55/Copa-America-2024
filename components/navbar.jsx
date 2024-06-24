@@ -4,13 +4,18 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const pathname = usePathname();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const getLinkClassName = (href) => 
+    `hover:text-gray-300 ${pathname === href ? 'text-blue-400' : 'text-gray-50'}`;
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-gray-950/50 backdrop-blur-md text-gray-50">
@@ -31,25 +36,25 @@ export default function Navbar() {
           </Link>
         </div>
         <nav className="hidden items-center gap-6 text-md font-semibold lg:flex">
-          <Link href="/" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/" className={getLinkClassName("/")} prefetch={false}>
             Inicio
           </Link>
-          <Link href="/grupos" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/grupos" className={getLinkClassName("/grupos")} prefetch={false}>
             Grupos
           </Link>
-          <Link href="/fasegrupos" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/fasegrupos" className={getLinkClassName("/fasegrupos")} prefetch={false}>
             Fase Grupos
           </Link>
-          <Link href="/cuartos" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/cuartos" className={getLinkClassName("/cuartos")} prefetch={false}>
             Cuartos
           </Link>
-          <Link href="/semis" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/semis" className={getLinkClassName("/semis")} prefetch={false}>
             Semis
           </Link>
-          <Link href="/final" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/final" className={getLinkClassName("/final")} prefetch={false}>
             Final
           </Link>
-          <Link href="/media" className="hover:text-gray-300" prefetch={false}>
+          <Link href="/media" className={getLinkClassName("/media")} prefetch={false}>
             Video/Fotos
           </Link>
         </nav>
@@ -71,25 +76,25 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="absolute top-16 left-0 z-50 w-full bg-gray-950 px-4 py-4 lg:hidden">
           <nav className="grid gap-4">
-            <Link href="/" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/" className={getLinkClassName("/")} prefetch={false} onClick={handleMenuToggle}>
               Inicio
             </Link>
-            <Link href="/grupos" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/grupos" className={getLinkClassName("/grupos")} prefetch={false} onClick={handleMenuToggle}>
               Grupos
             </Link>
-            <Link href="/fasegrupos" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/fasegrupos" className={getLinkClassName("/fasegrupos")} prefetch={false} onClick={handleMenuToggle}>
               Fase Grupos
             </Link>
-            <Link href="/cuartos" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/cuartos" className={getLinkClassName("/cuartos")} prefetch={false} onClick={handleMenuToggle}>
               Cuartos
             </Link>
-            <Link href="/semis" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/semis" className={getLinkClassName("/semis")} prefetch={false} onClick={handleMenuToggle}>
               Semis
             </Link>
-            <Link href="/final" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/final" className={getLinkClassName("/final")} prefetch={false} onClick={handleMenuToggle}>
               Final
             </Link>
-            <Link href="/media" className="hover:text-gray-300" prefetch={false} onClick={handleMenuToggle}>
+            <Link href="/media" className={getLinkClassName("/media")} prefetch={false} onClick={handleMenuToggle}>
               Video/Fotos
             </Link>
           </nav>
