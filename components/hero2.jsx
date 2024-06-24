@@ -70,7 +70,7 @@ export default function HeroMain() {
               height={600}
               className="w-full h-auto object-cover"
             />
-            <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+            <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
                 <h1 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h1>
             </div>
             </Link>
@@ -131,7 +131,7 @@ export default function HeroMain() {
                 height={600}
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+              <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
                 <h1 className="text-2xl lg:text-3xl">Estadios de la CONMEBOL Copa América 2024™</h1>
               </div>
               </Link>
@@ -148,7 +148,7 @@ export default function HeroMain() {
             sizes="100vw"
             className="w-full h-auto object-cover"
           />
-          <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+          <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
             <h1 className="text-2xl lg:text-3xl">
               Top 3: Los jugadores con más partidos
             </h1>
@@ -166,7 +166,7 @@ export default function HeroMain() {
             height={300}
             className="w-full h-auto object-cover"
           />
-          <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+          <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
             <h1 className="text-2xl lg:text-3xl">
               El último CAMPEÓN
             </h1>
