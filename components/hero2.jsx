@@ -7,7 +7,7 @@ import Link from "next/link"
 
 
 export default function HeroMain() {
-  const [countdown, setCountdown] = useState({
+  /*const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
@@ -41,7 +41,7 @@ export default function HeroMain() {
 
     const interval = setInterval(updateCountdown, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, []);*/
   
   return (
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
@@ -71,7 +71,7 @@ export default function HeroMain() {
               className="w-full h-auto object-cover"
             />
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h1 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h1>
+                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h2>
             </div>
             </Link>
           </div>  
@@ -122,7 +122,7 @@ export default function HeroMain() {
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <h1 className="text-4xl font-bold uppercase">LA MAGIA INTACTA</h1>
+            <h2 className="text-3xl font-bold uppercase">LA MAGIA INTACTA</h2>
             <p className="mt-2 text-xl font-light">🎂 37 años, 5 Mundiales jugados, la magia de siempre 🇦🇷</p>
             <p className="mt-2 text-xl font-light">El paso del tiempo, en los pies de @leomessi</p>
             <p className="mt-2 text-xl font-light">📹 FIFA</p>
@@ -139,6 +139,30 @@ export default function HeroMain() {
             </video>
             
             
+          </div>  
+        </div>
+
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/primergol">
+            <h3 className="text-3xl font-bold uppercase">LAS GRANDES FIGURAS...  </h3>
+            </Link>
+            <p className="mt-2 text-xl font-light">que marcaron su primer gol en la</p>
+            <p className="mt-2 text-xl font-light">CONMEBOL Copa América 2024™</p>
+            
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
+            <Link href="/primergol">
+              <Image 
+                src="https://res.cloudinary.com/dqg1afwty/image/upload/v1719341634/julian-alvarez_h5exgy.webp" 
+                alt="Julian Alvarez"
+                sizes="100vw"
+                width={700}
+                height={350}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </Link>
           </div>  
         </div>  
 
