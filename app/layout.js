@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Transition from "@/app/template";
+import { Analytics } from "@vercel/analytics/react";
 
 
 const kanit = Kanit({ subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <main className="flex h-screen flex-col p-2 md:p-4">
         <Navbar/>
         {children}
+        <Analytics/> 
         <Footer/>
       </main>
       </body>
