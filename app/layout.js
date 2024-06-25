@@ -4,6 +4,8 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Transition from "@/app/template";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 
 const kanit = Kanit({ subsets: ["latin"],
@@ -33,6 +35,7 @@ export default function RootLayout({ children }) {
         <Navbar/>
         {children}
         <Analytics/> 
+        <SpeedInsights />
         <Footer/>
       </main>
       </body>
