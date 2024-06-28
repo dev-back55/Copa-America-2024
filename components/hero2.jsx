@@ -60,18 +60,58 @@ export default function HeroMain() {
             </Link>
           </div>
 
-          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
-            <Link href="/felizcumple">
+          <div className="text-center lg:text-left lg:w-1/2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 bg-slate-500 relative">
             <Image 
-              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719241652/lionel-messi_ksbxft.webp"}
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595721/mural-3_yr3vid.webp"}
               alt="feliz cumple leo messi"
               sizes="100vw"
-              width={900}
-              height={600}
+              width={400}
+              height={400}
               className="w-full h-auto object-cover"
             />
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595745/mural-2_kpkzjt.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595768/mural-4_hkr6pu.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595801/mural-6_vvkn41.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595870/mural-5_ruyxy9.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719595819/mural-7_ftel4h.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={400}
+              height={400}
+              className="w-full h-auto object-cover"
+            />
+            <Link href="/mural">
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h2>
+                <h2 className="text-2xl lg:text-3xl">El Mural más Grande del Mundo</h2>
             </div>
             </Link>
           </div>  
@@ -139,6 +179,33 @@ export default function HeroMain() {
             </video>
             
             
+          </div>  
+        </div>
+
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/felizcumple">
+            <h3 className="text-3xl font-bold uppercase">¡Feliz cumple Leo 👑​⚽​🏆​🇦🇷​!</h3>
+            </Link>
+            <p className="mt-2 text-xl font-light">Para el más grande...</p>
+            <p className="mt-2 text-xl font-light">Copa América 2024 te dedica...</p>
+            
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+            <Link href="/felizcumple">
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1719241652/lionel-messi_ksbxft.webp"}
+              alt="feliz cumple leo messi"
+              sizes="100vw"
+              width={900}
+              height={600}
+              className="w-full h-auto object-cover"
+            />
+            <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h2>
+            </div>
+            </Link>
           </div>  
         </div>
 
