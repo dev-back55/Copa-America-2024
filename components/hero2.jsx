@@ -111,7 +111,7 @@ export default function HeroMain() {
             />
             <Link href="/mural">
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h2 className="text-2xl lg:text-3xl">El Mural más Grande del Mundo</h2>
+                <h2 className="text-2xl lg:text-3xl">El Mural más Grande del Mundo ➡️​</h2>
             </div>
             </Link>
           </div>  
@@ -203,7 +203,7 @@ export default function HeroMain() {
               className="w-full h-auto object-cover"
             />
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi!</h2>
+                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi! ➡️​</h2>
             </div>
             </Link>
           </div>  
@@ -234,7 +234,7 @@ export default function HeroMain() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/primergol">
-            <h3 className="text-3xl font-bold uppercase">LAS GRANDES FIGURAS...  </h3>
+            <h3 className="text-3xl font-bold uppercase">LAS GRANDES FIGURAS...  ➡️​</h3>
             </Link>
             <p className="mt-2 text-xl font-light">que marcaron su primer gol en la</p>
             <p className="mt-2 text-xl font-light">CONMEBOL Copa América 2024™</p>
