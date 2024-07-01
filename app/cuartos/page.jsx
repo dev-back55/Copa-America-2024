@@ -1,13 +1,17 @@
 import Image from "next/image";
 import React from "react";
-import { cuartos } from "@/lib/utils";
+//import { cuartos } from "@/lib/utils";
 import { obtenerDiaDeLaSemana } from "@/lib/utils";
+import { getCuartos } from "@/lib/actions/partidos";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: 'Cuartos de final',
 }
 
-export default function CuartosList() {
+export default async function CuartosList() {
+  const cuartos = await getCuartos();
 
   return (
     <div className="mt-24 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">
@@ -41,9 +45,10 @@ export default function CuartosList() {
                     height="36"
                     decoding="async"
                     className="rounded-full bg-white"
-                    src="/images/camiseta.webp"
+                    src={partido.bandera1}
                     />
                 </div>
+                <span className="flex text-lg font-semibold">{partido.gol1}</span>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <p>
@@ -54,6 +59,7 @@ export default function CuartosList() {
                 </p>
               </div>
               <div className="flex gap-3 items-center">
+              <span className="flextext-lg font-semibold">{partido.gol2}</span>
                 <div className="team-flag">
                   <Image
                     alt={partido.pais2}
@@ -62,7 +68,7 @@ export default function CuartosList() {
                     height="36"
                     decoding="async"
                     className="rounded-full bg-white"
-                    src="/images/camiseta.webp"
+                    src={partido.bandera2}
                     
                     />
                 </div>
@@ -80,7 +86,7 @@ export default function CuartosList() {
                       height="32"
                       decoding="async"
                       className="rounded-full bg-white"
-                      src="/images/camiseta.webp"
+                      src={partido.bandera1}
                       
                       />
                   </div>
@@ -95,7 +101,7 @@ export default function CuartosList() {
                       height="32"
                       decoding="async"
                       className="rounded-full bg-white"
-                      src="/images/camiseta.webp"
+                      src={partido.bandera2}
                       
                       />
                   </div>
@@ -107,16 +113,13 @@ export default function CuartosList() {
                 <div className="text-md md:text-xl">{partido.hora} hs</div>
               </div>
             </div>
+            {partido.resumen != "" &&
             <div className="col-span-full lg:col-span-1 lg:text-right text-center p-5 lg:p-0">
-              <a
-                target="_blank"
-                className="button button-ghost w-full lg:w-auto"
-                id="jogo01_es"
-                href="/"
-                >
-                Ver Resumen
-              </a>
+              <Link href={partido.resumen} target="_blank">
+                <Button className="gap-1 bg-green-500">Ver Resumen</Button>
+              </Link>
             </div>
+            }
           </div>
         </li>
         ))
