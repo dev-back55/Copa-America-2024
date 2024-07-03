@@ -17,7 +17,7 @@ const faseGrupos = await getFaseGrupos();
           <p className="text-zinc-500">20 de junio al 2 de julio</p>
           <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>
           <Link href="https://futbol-libre.org/tv1/" target="_blank">
-          <Button className="mt-4 gap-1 bg-red-600">Ver Partidos</Button>
+            <Button className="mt-4 gap-1 bg-red-600">Ver Partidos</Button>
           </Link>
         </div>
       </div>
