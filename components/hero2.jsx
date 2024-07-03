@@ -183,7 +183,7 @@ export default function HeroMain() {
               className="w-full h-auto object-cover"
             />
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h2 className="text-2xl lg:text-3xl">Designación de árbitros ➡️​</h2>
+                <h2 className="text-2xl lg:text-3xl">Designación de Árbitros ➡️​</h2>
             </div>
             </Link>
           </div>  
@@ -194,7 +194,7 @@ export default function HeroMain() {
             <h2 className="text-3xl font-bold uppercase">Todos los goles de la 1er ronda</h2>
             <p className="mt-2 text-xl font-light">Los mejores momentos de la primera etapa de la fase de grupos.</p>
             <p className="mt-2 text-xl font-light">Las jugadas y los goles.</p>
-            <p className="mt-2 text-xl font-light">📹 Conmebol Copa América 2024</p>
+            <p className="mt-2 text-xl font-light">📹 Conmebol Copa América 2024™</p>
           </div>
 
           <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
@@ -214,7 +214,7 @@ export default function HeroMain() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/felizcumple">
-            <h3 className="text-3xl font-bold uppercase">¡Feliz cumple Leo 👑​⚽​🏆​🇦🇷​!</h3>
+            <h3 className="text-3xl font-bold uppercase">¡Feliz Cumple Leo 👑​⚽​🏆​🇦🇷​!</h3>
             </Link>
             <p className="mt-2 text-xl font-light">Para el más grande...</p>
             <p className="mt-2 text-xl font-light">Copa América 2024 te dedica...</p>
@@ -232,7 +232,7 @@ export default function HeroMain() {
               className="w-full h-auto object-cover"
             />
             <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
-                <h2 className="text-2xl lg:text-3xl">¡Feliz cumple Lionel Messi! ➡️​</h2>
+                <h2 className="text-2xl lg:text-3xl">¡Feliz Cumple Lionel Messi! ➡️​</h2>
             </div>
             </Link>
           </div>  
@@ -333,7 +333,7 @@ export default function HeroMain() {
           />
           <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
             <h1 className="text-2xl lg:text-3xl">
-              El último CAMPEÓN
+              El Último CAMPEÓN
             </h1>
           </div>
           </Link>
