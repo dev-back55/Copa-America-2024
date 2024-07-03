@@ -162,6 +162,35 @@ export default function HeroMain() {
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/arbitros">
+            <h3 className="text-3xl font-bold uppercase">Árbitros para Argentina-Ecuador y Venezuela-Canadá</h3>
+            </Link>
+            <p className="mt-2 text-xl font-light">Designación de árbitros para los dos primeros partidos en</p>
+            <p className="mt-2 text-xl font-light">Cuartos de Final de la CONMEBOL Copa América 2024™
+
+</p>
+            
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+            <Link href="/arbitros">
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1720029593/arbitros_cr4d1m.webp"}
+              alt="arbitros designacion"
+              sizes="100vw"
+              width={900}
+              height={600}
+              className="w-full h-auto object-cover"
+            />
+            <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+                <h2 className="text-2xl lg:text-3xl">Designación de árbitros ➡️​</h2>
+            </div>
+            </Link>
+          </div>  
+        </div>
+
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
             <h2 className="text-3xl font-bold uppercase">Todos los goles de la 1er ronda</h2>
             <p className="mt-2 text-xl font-light">Los mejores momentos de la primera etapa de la fase de grupos.</p>
             <p className="mt-2 text-xl font-light">Las jugadas y los goles.</p>

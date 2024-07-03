@@ -29,8 +29,9 @@ const grupoD = paisesPorGrupo['D'];
 
   return (
     <seccion className="container">
-      <div className="bg-blue-900 xl:max-w-6xl md:max-w-5xl lg:mx-auto mt-20 p-5">
-        <h2 className="text-2xl font-display">Grupos</h2>
+      <div className="flex bg-blue-900 xl:max-w-6xl md:max-w-5xl lg:mx-auto mt-20 p-5 gap-2">
+        <p className="text-2xl font-display">Grupos</p>
+        <span className="text-white-200 text-2xl font-display">{' - '}Fase de Grupos Finalizada</span>
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-6 bg-blue-900 xl:max-w-6xl md:max-w-5xl lg:mx-auto">
       <Card className="bg-blue-800 text-white">
