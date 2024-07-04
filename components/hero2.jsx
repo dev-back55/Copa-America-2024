@@ -52,7 +52,7 @@ export default function HeroMain() {
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <h1 className="text-4xl font-bold uppercase">Siente la Grandeza</h1>
             <p className="mt-2 text-xl font-light">Vivi los mejores momento de la Copa America 2024™</p>
-            <Link href="/fasegrupos">
+            <Link href="/cuartos">
               <Button className="mt-4 gap-1 bg-red-600">
                Comienza ahora<CheckIcon className="w-5 h-5" />
               </Button>
