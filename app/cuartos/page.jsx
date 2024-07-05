@@ -76,7 +76,8 @@ export default async function CuartosList() {
                 <span className="text-lg capitalize">{partido.pais2}</span>
               </div>
             </div>
-            <div className="col-span-full lg:hidden flex items-center px-5">
+            {/* Mobile View */}
+            <div className="col-span-full lg:hidden flex items-center px-5 mb-4">
               <div className="flex flex-col gap-3 flex-grow">
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
@@ -91,7 +92,8 @@ export default async function CuartosList() {
                       
                       />
                   </div>
-                  <div className="flex-grow capitalize">{partido.pais1}</div>
+                  <p className="flex-grow capitalize">{partido.pais1}</p>
+                  <span className="flex text-lg font-semibold">{partido.gol1}</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
@@ -106,7 +108,8 @@ export default async function CuartosList() {
                       
                       />
                   </div>
-                  <div className="flex-grow capitalize">{partido.pais2}</div>
+                  <p className="flex-grow capitalize">{partido.pais2}</p>
+                  <span className="flex text-lg font-semibold">{partido.gol2}</span>
                 </div>
               </div>
               <div className="rounded-xl px-3 py-2 text-center font-semibold">

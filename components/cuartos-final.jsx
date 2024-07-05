@@ -72,6 +72,7 @@ export default async function Cuartos() {
                   src={partido.bandera1}
                 />
                 <div className="flex-grow text-lg text-center capitalize">{partido.pais1}</div>
+                <span className="flex text-lg font-semibold">{partido.gol1}</span>
               </div>
               <div className="flex items-center justify-center w-full gap-2">
                 <Image
@@ -84,6 +85,7 @@ export default async function Cuartos() {
                   src={partido.bandera2}
                 />
                 <div className="flex-grow text-lg text-center capitalize">{partido.pais2}</div>
+                <span className="flex text-lg font-semibold">{partido.gol2}</span>
               </div>
               <div className="text-center mt-2">
                 <div className="text-md uppercase">{obtenerDiaDeLaSemana(partido.fecha).slice(0, 3)} - {partido.fecha.slice(0, 5)}</div>
