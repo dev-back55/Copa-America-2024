@@ -46,6 +46,17 @@ export default function HeroMain() {
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
+
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
+      <Image
+        src="https://res.cloudinary.com/dqg1afwty/image/upload/v1720188957/el_dibu_yyquww.webp"
+        alt="Estadios de la CONMEBOL"
+        sizes="100vw"
+        width={1920}
+        height={1080}
+        className="w-full h-auto object-cover rounded-lg"
+      />
+      </div>  
               
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
