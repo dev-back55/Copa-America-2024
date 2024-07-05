@@ -60,10 +60,10 @@ export default function HeroMain() {
               
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <h2 className="text-3xl font-bold uppercase">EL DIBU 🕺🏻​ otra vez lo hizo...</h2>
-            <p className="mt-2 text-xl font-light">Para ver mil veces: DIBU MARTÍNEZ y sus dos atajadas</p>
-            <p className="mt-2 text-xl font-light">increibles para pasar a semi finales.</p>
-            <p className="mt-2 text-xl font-light">📹 TyCSports</p>
+            <h2 className="text-xl lg:text-3xl font-bold uppercase">EL DIBU 🕺🏻​ otra vez lo hizo...</h2>
+            <p className="mt-2 text-base lg:text-xl font-light">Para ver mil veces: DIBU MARTÍNEZ y sus dos atajadas</p>
+            <p className="mt-2 text-base lg:text-xl font-light">increibles para pasar a semi finales.</p>
+            <p className="mt-2 text-base lg:text-xl font-light">📹 TyCSports</p>
           </div>
 
           <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
@@ -82,8 +82,8 @@ export default function HeroMain() {
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <h1 className="text-4xl font-bold uppercase">Siente la Grandeza</h1>
-            <p className="mt-2 text-xl font-light">Vivi los mejores momento de la Copa America 2024™</p>
+            <h1 className="text-xl lg:text-4xl font-bold uppercase">Siente la Grandeza</h1>
+            <p className="mt-2 text-base lg:text-xl font-light">Vivi los mejores momento de la Copa America 2024™</p>
             <Link href="/cuartos">
               <Button className="mt-4 gap-1 bg-red-600">
                Comienza ahora<CheckIcon className="w-5 h-5" />
@@ -197,10 +197,10 @@ export default function HeroMain() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/arbitros">
-            <h3 className="text-3xl font-bold uppercase">Árbitros para Argentina-Ecuador y Venezuela-Canadá</h3>
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">Árbitros para Argentina-Ecuador y Venezuela-Canadá</h3>
             </Link>
-            <p className="mt-2 text-xl font-light">Designación de árbitros para los dos primeros partidos en</p>
-            <p className="mt-2 text-xl font-light">Cuartos de Final de la CONMEBOL Copa América 2024™</p>
+            <p className="mt-2 text-base lg:text-xl font-light">Designación de árbitros para los dos primeros partidos en</p>
+            <p className="mt-2 text-base lg:text-xl font-light">Cuartos de Final de la CONMEBOL Copa América 2024™</p>
             
           </div>
 
@@ -223,10 +223,10 @@ export default function HeroMain() {
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <h2 className="text-3xl font-bold uppercase">Todos los goles de la 1er ronda</h2>
-            <p className="mt-2 text-xl font-light">Los mejores momentos de la primera etapa de la fase de grupos.</p>
-            <p className="mt-2 text-xl font-light">Las jugadas y los goles.</p>
-            <p className="mt-2 text-xl font-light">📹 Conmebol Copa América 2024™</p>
+            <h2 className="text-xl lg:text-3xl font-bold uppercase">Todos los goles de la 1er ronda</h2>
+            <p className="mt-2 text-base lg:text-xl font-light">Los mejores momentos de la primera etapa de la fase de grupos.</p>
+            <p className="mt-2 text-base lg:text-xl font-light">Las jugadas y los goles.</p>
+            <p className="mt-2 text-base lg:text-xl font-light">📹 Conmebol Copa América 2024™</p>
           </div>
 
           <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
@@ -246,10 +246,10 @@ export default function HeroMain() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/felizcumple">
-            <h3 className="text-3xl font-bold uppercase">¡Feliz Cumple Leo 👑​⚽​🏆​🇦🇷​!</h3>
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">¡Feliz Cumple Leo 👑​⚽​🏆​🇦🇷​!</h3>
             </Link>
-            <p className="mt-2 text-xl font-light">Para el más grande...</p>
-            <p className="mt-2 text-xl font-light">Copa América 2024 te dedica...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">Para el más grande...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">Copa América 2024 te dedica...</p>
             
           </div>
 
@@ -272,10 +272,10 @@ export default function HeroMain() {
 
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <h2 className="text-3xl font-bold uppercase">LA MAGIA INTACTA</h2>
-            <p className="mt-2 text-xl font-light">🎂 37 años, 5 Mundiales jugados, la magia de siempre 🇦🇷</p>
-            <p className="mt-2 text-xl font-light">El paso del tiempo, en los pies de @leomessi</p>
-            <p className="mt-2 text-xl font-light">📹 FIFA</p>
+            <h2 className="text-xl lg:text-3xl font-bold uppercase">LA MAGIA INTACTA</h2>
+            <p className="mt-2 text-base lg:text-xl font-light">🎂 37 años, 5 Mundiales jugados, la magia de siempre 🇦🇷</p>
+            <p className="mt-2 text-base lg:text-xl font-light">El paso del tiempo, en los pies de @leomessi</p>
+            <p className="mt-2 text-base lg:text-xl font-light">📹 FIFA</p>
           </div>
 
           <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
@@ -295,10 +295,10 @@ export default function HeroMain() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/primergol">
-            <h3 className="text-3xl font-bold uppercase">LAS GRANDES FIGURAS...  ➡️​</h3>
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">LAS GRANDES FIGURAS...  ➡️​</h3>
             </Link>
-            <p className="mt-2 text-xl font-light">que marcaron su primer gol en la</p>
-            <p className="mt-2 text-xl font-light">CONMEBOL Copa América 2024™</p>
+            <p className="mt-2 text-base lg:text-xl font-light">que marcaron su primer gol en la</p>
+            <p className="mt-2 text-base lg:text-xl font-light">CONMEBOL Copa América 2024™</p>
             
           </div>
 
