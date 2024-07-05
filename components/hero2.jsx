@@ -1,9 +1,8 @@
-"use client"
-
-import { useState, useEffect } from "react"
+//import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import Cuartos from "@/components/cuartos-final"
 
 
 export default function HeroMain() {
@@ -160,15 +159,15 @@ export default function HeroMain() {
           </motion.div>*/}
         </div>
 
+        <Cuartos />
+
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/arbitros">
             <h3 className="text-3xl font-bold uppercase">Árbitros para Argentina-Ecuador y Venezuela-Canadá</h3>
             </Link>
             <p className="mt-2 text-xl font-light">Designación de árbitros para los dos primeros partidos en</p>
-            <p className="mt-2 text-xl font-light">Cuartos de Final de la CONMEBOL Copa América 2024™
-
-</p>
+            <p className="mt-2 text-xl font-light">Cuartos de Final de la CONMEBOL Copa América 2024™</p>
             
           </div>
 
