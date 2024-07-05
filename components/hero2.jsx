@@ -47,6 +47,28 @@ export default function HeroMain() {
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
               
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <h2 className="text-3xl font-bold uppercase">EL DIBU 🕺🏻​ otra vez lo hizo...</h2>
+            <p className="mt-2 text-xl font-light">Para ver mil veces: DIBU MARTÍNEZ y sus dos atajadas</p>
+            <p className="mt-2 text-xl font-light">increibles para pasar a semi finales.</p>
+            <p className="mt-2 text-xl font-light">📹 TyCSports</p>
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
+            
+            <video 
+                src="https://res.cloudinary.com/dqg1afwty/video/upload/v1720152883/PARA_VER_MIL_VECES-_DIBU_MART%C3%8DNEZ_Y_SUS_DOS_ATAJADAS_SALVADORAS_en_los_penales_donde_Argentina_pas%C3%B3_a_semis_de_la_Copa_Am%C3%A9rica_v5cvir.mp4" 
+                width="auto"
+                height="auto"
+                controls
+                className="rounded-lg">
+            </video>
+            
+            
+          </div>  
+        </div>
+
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <h1 className="text-4xl font-bold uppercase">Siente la Grandeza</h1>
