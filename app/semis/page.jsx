@@ -27,7 +27,7 @@ export default async function SemisList() {
         {semifinales.map((partido, index) => (
           
           <li key={index}>
-          <div className="bg-background rounded-xl border border-cyan-300 grid grid-cols-4 items-center lg:p-5">
+          <div className="bg-background rounded-xl border border-cyan-300 grid grid-cols-4 items-center lg:p-5 p-4">
             <div className="col-span-full lg:col-span-1 p-5 lg:p-0">
               <div className="font-semibold">Partido {partido.partido}</div>
               <div className="text-zinc-500">

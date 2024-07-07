@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -8,14 +8,33 @@ import { usePathname } from "next/navigation"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isPlaying, setIsPlaying] = useState(false);
+  const audioRef = useRef(null);
   const pathname = usePathname();
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleAudioToggle = () => {
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
   const getLinkClassName = (href) => 
     `hover:text-gray-300 ${pathname === href ? 'text-blue-400' : 'text-gray-50'}`;
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-gray-950/50 backdrop-blur-md text-gray-50">
@@ -71,6 +90,27 @@ export default function Navbar() {
             
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
+
+          
+          <Button
+            variant="outline"
+            size="icon"
+            className="rounded-full"
+            onClick={handleAudioToggle}
+          >
+            {isPlaying ? (
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <polygon points="5,3 19,12 5,21"></polygon>
+              </svg>
+            )}
+            <span className="sr-only">{isPlaying ? "Stop audio" : "Play audio"}</span>
+          </Button>
+          <audio ref={audioRef} src="https://res.cloudinary.com/dqg1afwty/video/upload/v1720279853/dale-seleccion_ofe5g2.mp3" />
         </div>
       </div>
       {isMenuOpen && (

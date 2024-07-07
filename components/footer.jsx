@@ -53,7 +53,7 @@ export default function Footer() {
               <span className="text-lg font-bold">Copa América 2024</span>
             </Link>
           </div>
-          
+          <p>🎶Tema @ViusMusic​</p>
           <Link href="https://horacioabitu.com.ar" target="_blank">
           <p className="text-gray-500 dark:text-gray-400">
             © 2024 Desarrollado por Horacio Abitú. Todos los derechos reservados.
