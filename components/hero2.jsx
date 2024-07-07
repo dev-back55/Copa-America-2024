@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
 import Cuartos from "@/components/cuartos-final"
+import Semifinales from "@/components/semifinales"
 
 
 export default function HeroMain() {
@@ -46,7 +47,7 @@ export default function HeroMain() {
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
-
+      <Semifinales/>
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
       <Image
         src="https://res.cloudinary.com/dqg1afwty/image/upload/v1720188957/el_dibu_yyquww.webp"
