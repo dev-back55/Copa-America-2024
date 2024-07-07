@@ -48,6 +48,29 @@ export default function HeroMain() {
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
       <Semifinales/>
+
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <h2 className="text-xl lg:text-3xl font-bold uppercase">EL MUNDO DE LOS PRIMEROS</h2>
+            <p className="mt-2 text-base lg:text-xl font-light">Somos América...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">pasión, familia, amistad, somos hermanos latinoaméricanos...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">📹 Conmebol</p>
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 rounded-lg relative">
+            
+            <video 
+                src="https://res.cloudinary.com/dqg1afwty/video/upload/v1720378824/EL_MUNDO_DE_LOS_PRIMEROS_pv082f.mp4" 
+                width="auto"
+                height="auto"
+                controls
+                className="rounded-lg">
+            </video>
+            
+            
+          </div>  
+        </div>
+
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
       <Image
         src="https://res.cloudinary.com/dqg1afwty/image/upload/v1720188957/el_dibu_yyquww.webp"
