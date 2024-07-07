@@ -99,12 +99,12 @@ export default function Navbar() {
             onClick={handleAudioToggle}
           >
             {isPlaying ? (
-              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <svg viewBox="0 0 24 24" fill="red" width="24" height="24">
                 <rect x="6" y="4" width="4" height="16"></rect>
                 <rect x="14" y="4" width="4" height="16"></rect>
               </svg>
             ) : (
-              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <svg viewBox="0 0 24 24" fill="green" width="24" height="24">
                 <polygon points="5,3 19,12 5,21"></polygon>
               </svg>
             )}
