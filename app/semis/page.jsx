@@ -48,6 +48,7 @@ export default async function SemisList() {
                     src={partido.bandera1}
                     />
                 </div>
+                <span className="flex text-lg font-semibold">{partido.gol1}</span>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <p>
@@ -58,6 +59,7 @@ export default async function SemisList() {
                 </p>
               </div>
               <div className="flex gap-3 items-center">
+              <span className="flextext-lg font-semibold">{partido.gol2}</span>
                 <div className="team-flag">
                   <Image
                     alt={partido.pais2}

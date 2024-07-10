@@ -56,7 +56,8 @@ export default function Footer() {
           <p>🎶Tema @ViusMusic​</p>
           <Link href="https://horacioabitu.com.ar" target="_blank">
           <p className="text-gray-500 dark:text-gray-400">
-            © 2024 Desarrollado por Horacio Abitú. Todos los derechos reservados.
+            © 2024 Desarrollado por 
+            <span className="underline decoration-blue-700">{" "}Horacio Abitú.{" "}</span> Todos los derechos reservados.
           </p>
           </Link>
         </div>
