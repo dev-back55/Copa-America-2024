@@ -2,6 +2,8 @@ import Image from "next/image";
 //import { final } from "@/lib/utils";
 import { getFinal } from "@/lib/actions/partidos";
 import { obtenerDiaDeLaSemana } from "@/lib/utils";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: 'Final Copa América 2024',
