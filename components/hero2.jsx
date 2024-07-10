@@ -47,6 +47,34 @@ export default function HeroMain() {
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
+
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/arbitros">
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">Ganó Argentina pasó a la Final</h3>
+            </Link>
+            <p className="mt-2 text-base lg:text-xl font-light">Argentina vencio 2 a 0 a Canadá </p>
+            <p className="mt-2 text-base lg:text-xl font-light">Es Finalista de la CONMEBOL Copa América 2024™</p>
+            
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/2 bg-slate-500 relative">
+            <Link href="/media">
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1720580523/FINALISTAS_n55tb9.jpg"}
+              alt="arbitros designacion"
+              sizes="100vw"
+              width={1080}
+              height={1350}
+              className="w-full h-auto object-cover"
+            />
+            <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+                <h2 className="text-2xl lg:text-3xl">Ver los goles ➡️​</h2>
+            </div>
+            </Link>
+          </div>  
+        </div>
+
       <Semifinales/>
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mb-4">
