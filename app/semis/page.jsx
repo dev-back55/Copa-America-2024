@@ -91,6 +91,7 @@ export default async function SemisList() {
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais1}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol1}</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
@@ -106,6 +107,7 @@ export default async function SemisList() {
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais2}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol2}</span>
                 </div>
               </div>
               <div className="rounded-xl px-3 py-2 text-center font-semibold">
