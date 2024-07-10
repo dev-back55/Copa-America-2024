@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { final } from "@/lib/utils";
+//import { final } from "@/lib/utils";
+import { getFinal } from "@/lib/actions/partidos";
 import { obtenerDiaDeLaSemana } from "@/lib/utils";
 
 export const metadata = {
   title: 'Final Copa América 2024',
 }
 
-export default function CuartosList() {
+export default async function CuartosList() {
+  const final = await getFinal();
 
   return (
     <div className="mt-24 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">
@@ -40,9 +42,10 @@ export default function CuartosList() {
                     height="36"
                     decoding="async"
                     className="rounded-full bg-white"
-                    src="/images/camiseta.webp"
+                    src={partido.bandera1}
                     />
                 </div>
+                <span className="flex text-lg font-semibold">{partido.gol1}</span>
               </div>
               <div className="flex flex-col items-center justify-center">
                 <p>
@@ -53,6 +56,7 @@ export default function CuartosList() {
                 </p>
               </div>
               <div className="flex gap-3 items-center">
+              <span className="flextext-lg font-semibold">{partido.gol2}</span>
                 <div className="team-flag">
                   <Image
                     alt={partido.pais2}
@@ -61,7 +65,7 @@ export default function CuartosList() {
                     height="36"
                     decoding="async"
                     className="rounded-full bg-white"
-                    src="/images/camiseta.webp"
+                    src={partido.bandera2}
                     
                     />
                 </div>
@@ -79,26 +83,28 @@ export default function CuartosList() {
                       height="32"
                       decoding="async"
                       className="rounded-full bg-white"
-                      src="/images/camiseta.webp"
+                      src={partido.bandera1}
                       
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais1}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol1}</span>
                 </div>
                 <div className="flex gap-3 items-center">
                   <div className="team-flag">
                     <Image
-                      alt="alternative text"
+                      alt={partido.pais2}
                       loading="lazy"
                       width="32"
                       height="32"
                       decoding="async"
                       className="rounded-full bg-white"
-                      src="/images/camiseta.webp"
+                      src={partido.bandera2}
                       
                       />
                   </div>
                   <div className="flex-grow capitalize">{partido.pais2}</div>
+                  <span className="flex text-lg font-semibold">{partido.gol2}</span>
                 </div>
               </div>
               <div className="rounded-xl px-3 py-2 text-center font-semibold">
@@ -106,16 +112,13 @@ export default function CuartosList() {
                 <div className="text-md md:text-xl">{partido.hora} hs</div>
               </div>
             </div>
+            {partido.resumen != "" &&
             <div className="col-span-full lg:col-span-1 lg:text-right text-center p-5 lg:p-0">
-              <a
-                target="_blank"
-                className="button button-ghost w-full lg:w-auto"
-                id="jogo01_es"
-                href="/"
-                >
-                Ver Resumen
-              </a>
+              <Link href={partido.resumen} target="_blank">
+                <Button className="gap-1 bg-green-500">Ver Resumen</Button>
+              </Link>
             </div>
+            }
           </div>
         </li>
         ))
