@@ -16,9 +16,9 @@ const faseGrupos = await getFaseGrupos();
           <h2 className="text-2xl font-display">Fase de grupos</h2>
           <p className="text-zinc-500">20 de junio al 2 de julio</p>
           <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>
-          <Link href="https://futbol-libre.org/tv1/" target="_blank">
+          {/* <Link href="https://futbol-libre.org/tv1/" target="_blank">
             <Button className="mt-4 gap-1 bg-red-600">Ver Partidos</Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <ul className="space-y-6 lg:space-y-4">

@@ -18,9 +18,9 @@ export default async function Cuartos() {
         
           <p className="text-zinc-500">4 de julio al 6 de julio</p>
           <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>
-          <Link href="https://futbol-libre.org/tv1/" target="_blank">
+          {/* <Link href="https://futbol-libre.org/tv1/" target="_blank">
             <Button className="mt-4 lg:mt-0 gap-1 bg-red-600">Ver Partidos</Button>
-          </Link>
+          </Link> */}
        
       </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-start">
