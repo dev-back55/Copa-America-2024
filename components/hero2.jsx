@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Cuartos from "@/components/cuartos-final"
 import Semifinales from "@/components/semifinales"
+import FinalList from "@/components/final";
 
 
 export default function HeroMain() {
@@ -47,6 +48,8 @@ export default function HeroMain() {
     <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
+
+      <FinalList/>
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
