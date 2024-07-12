@@ -14,7 +14,7 @@ export default async function Cuartos() {
   return (
     <div className="mt-10 p-3 xl:max-w-6xl md:max-w-5xl xl:mx-auto">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6">
-        <h2 className="text-2xl font-display tracking-wider">Semifinales</h2>
+        <h2 className="text-2xl font-display tracking-wider">Semifinales - Etapa Finalizada</h2>
         
           <p className="text-zinc-500">9 de julio al 10 de julio</p>
           <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>

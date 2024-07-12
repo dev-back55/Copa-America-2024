@@ -49,6 +49,33 @@ export default function HeroMain() {
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
 
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/felizcumple">
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">¡El Domingo cueste lo...</h3>
+            </Link>
+            <p className="mt-2 text-base lg:text-xl font-light">...que cueste, el domingo...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">...tenemos que GANAR 🏆​🇦🇷​!</p>
+            
+          </div>
+
+          <div className="text-center lg:text-left lg:w-1/3 bg-slate-500 relative">
+            <Link href="/media">
+            <Image 
+              src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1720805270/202407121349_portada_ffet2k.webp"}
+              alt="video tenemos que ganar"
+              sizes="40vw"
+              width={350}
+              height={650}
+              className="w-full h-auto object-cover"
+            />
+            <div className="w-full absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-50">
+                <h2 className="text-2xl lg:text-3xl">Ver Video ➡️​</h2>
+            </div>
+            </Link>
+          </div>  
+        </div>
+
       <FinalList/>
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
@@ -65,7 +92,7 @@ export default function HeroMain() {
             <Link href="/media">
             <Image 
               src={"https://res.cloudinary.com/dqg1afwty/image/upload/v1720580523/FINALISTAS_n55tb9.jpg"}
-              alt="arbitros designacion"
+              alt="Seleccion Argentina a la final"
               sizes="100vw"
               width={1080}
               height={1350}
@@ -75,7 +102,7 @@ export default function HeroMain() {
                 <h2 className="text-2xl lg:text-3xl">Ver los goles ➡️​</h2>
             </div>
             </Link>
-          </div>  
+          </div> 
         </div>
 
       <Semifinales/>
