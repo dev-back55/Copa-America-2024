@@ -52,6 +52,25 @@ export default function HeroMain() {
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/felizcumple">
+            <h3 className="text-xl lg:text-3xl font-bold uppercase">Para ir entrando en calor...</h3>
+            </Link>
+            <p className="mt-2 text-base lg:text-xl font-light">...¡VAMOS ARGENTINA!🇦🇷...</p>
+            <p className="mt-2 text-base lg:text-xl font-light">...tenemos que GANAR 🏆​🇦🇷​!</p>
+            
+          </div>
+
+          <video 
+                src="https://res.cloudinary.com/dqg1afwty/video/upload/v1720971123/para_ir_calentando_1_vunyvu.mp4" 
+                width="700"
+                height="auto"
+                controls
+                className="rounded-lg">
+          </video>
+      </div>
+
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            <Link href="/felizcumple">
             <h3 className="text-xl lg:text-3xl font-bold uppercase">¡El Domingo cueste lo...</h3>
             </Link>
             <p className="mt-2 text-base lg:text-xl font-light">...que cueste, el domingo...</p>
@@ -74,7 +93,7 @@ export default function HeroMain() {
             </div>
             </Link>
           </div>  
-        </div>
+      </div>
 
       <FinalList/>
 

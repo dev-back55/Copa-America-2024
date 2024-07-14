@@ -14,7 +14,7 @@ export default async function FinalList() {
           <h2 className="text-2xl font-display">3º Puesto y Final</h2>
           <p className="text-zinc-500">13 de julio al 14 de julio</p>
           <p className="text-zinc-500 text-sm">Time zone Buenos Aires (GMT-3)</p>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <Link href="https://www.directvgo.com/ar/home/envivo" target="_blank">
               <Button className="mt-4 gap-1 bg-red-600">DTV GO</Button>
             </Link>
