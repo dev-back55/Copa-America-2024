@@ -21,6 +21,12 @@ export default async function FinalList() {
             <Link href="https://www.tvpublica.com.ar/vivo" target="_blank">
               <Button className="mt-4 gap-1 bg-red-600">TV PUBLICA</Button>
             </Link>
+            <Link href="https://futbol-libre.org/tv1/" target="_blank">
+              <Button className="mt-4 gap-1 bg-red-600">TV OnLine 1</Button>
+            </Link>
+            <Link href="https://tele-libre.com/en-vivo-online/todo-deporte/" target="_blank">
+              <Button className="mt-4 gap-1 bg-red-600">TV OnLine 2</Button>
+            </Link>
           </div>
         </div>
       </div>
