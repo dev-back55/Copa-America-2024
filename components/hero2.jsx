@@ -48,13 +48,13 @@ export default function HeroMain() {
             <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
-        
+
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             
             <h2 className="text-xl lg:text-3xl font-bold uppercase">¡ARGENTINA CAMPEON! 🏆​🇦🇷</h2>
             
-            <p className="mt-2 text-base lg:text-xl font-light">Argentina BiCampeón 🇦🇷</p>
+            <p className="mt-2 text-base lg:text-xl font-light">con gol del Toro Lautaro Martinez 🐂​🇦🇷</p>
             <p className="mt-2 text-base lg:text-xl font-light">¡Vamos Argentina 🏆​🇦🇷​!</p>
             
           </div>
