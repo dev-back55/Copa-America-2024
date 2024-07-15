@@ -48,14 +48,33 @@ export default function HeroMain() {
             <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
+        
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
+          <div className="mb-6 lg:mb-0 lg:w-1/2">
+            
+            <h2 className="text-xl lg:text-3xl font-bold uppercase">¡ARGENTINA CAMPEON! 🏆​🇦🇷</h2>
+            
+            <p className="mt-2 text-base lg:text-xl font-light">Argentina BiCampeón 🇦🇷</p>
+            <p className="mt-2 text-base lg:text-xl font-light">¡Vamos Argentina 🏆​🇦🇷​!</p>
+            
+          </div>
+
+          <video 
+                src="https://res.cloudinary.com/dqg1afwty/video/upload/v1721017386/GOOOOOOOOOOOOOL_AAAAAAAAAAAARGGENTINNOOOOOOOOOO_CARAJO_A_los_112_LAUTARO_MART%C3%8DNEZ_puso_el_1-0_ante_Colombia_en_la_final_de_la_CopaAm%C3%A9rica._VAMOS_ARGENTINA_mcdonalds_ar_presenta_la_jugada_m%C3%A1s_linda_del_partido_tbbluh.mp4" 
+                width="700"
+                height="auto"
+                controls
+                className="rounded-lg">
+          </video>
+      </div>
 
       <FinalList/>
       
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
-            <Link href="/felizcumple">
+           
             <h3 className="text-xl lg:text-3xl font-bold uppercase">Para ir entrando en calor...</h3>
-            </Link>
+           
             <p className="mt-2 text-base lg:text-xl font-light">...¡VAMOS ARGENTINA!🇦🇷...</p>
             <p className="mt-2 text-base lg:text-xl font-light">...tenemos que GANAR 🏆​🇦🇷​!</p>
             
