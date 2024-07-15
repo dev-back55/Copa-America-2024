@@ -13,42 +13,44 @@ export default function HeroMain() {
     hours: 0,
     minutes: 0,
     seconds: 0,
-  })
-  useEffect(() => {
-    const competitionDate = new Date("2024-06-20T21:00:00").getTime();
-
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const distance = competitionDate - now;
-
-      if (distance < 0) {
-        clearInterval(interval);
-        setCountdown({
-          days: 0,
-          hours: 0,
+    })
+    useEffect(() => {
+      const competitionDate = new Date("2024-06-20T21:00:00").getTime();
+      
+      const updateCountdown = () => {
+        const now = new Date().getTime();
+        const distance = competitionDate - now;
+        
+        if (distance < 0) {
+          clearInterval(interval);
+          setCountdown({
+            days: 0,
+            hours: 0,
           minutes: 0,
           seconds: 0,
-        });
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24)) + 1;
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      setCountdown({ days, hours, minutes, seconds });
-    };
-
-    const interval = setInterval(updateCountdown, 1000);
-    return () => clearInterval(interval);
-  }, []);*/
-  
-  return (
-    <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
+          });
+          return;
+          }
+          
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24)) + 1;
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+          setCountdown({ days, hours, minutes, seconds });
+          };
+          
+          const interval = setInterval(updateCountdown, 1000);
+          return () => clearInterval(interval);
+          }, []);*/
+          
+          return (
+            <div className="mt-20 bg-[url('/images/hero-bg-grande.webp')] bg-cover max-w-6xl mx-auto">
     <section className="text-white">
       <div className="mx-auto px-4 py-8">
 
+      <FinalList/>
+      
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-2">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
             <Link href="/felizcumple">
@@ -95,7 +97,6 @@ export default function HeroMain() {
           </div>  
       </div>
 
-      <FinalList/>
 
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between bg-blue-800 p-5 rounded-xl mt-4">
           <div className="mb-6 lg:mb-0 lg:w-1/2">
